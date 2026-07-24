@@ -1,2 +1,2 @@
-# flowset-helm
-Helm Charts for Flowset
+# apisix-helm
+Helm charts for apisix configuration
