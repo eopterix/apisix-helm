@@ -3,9 +3,9 @@ kind: ApisixGlobalRule
 metadata:
   name: {{ .Values.name | quote }}
 spec:
-  ingressClassName: {{ .Values.ingress_class_name | quote }}
+  ingressClassName: {{ .Values.ingressClassName | quote }}
   plugins:
-    - name: {{ .Values.plugin.name | quote }}
-      enable: {{ .Values.plugin.enable }}
+    - name: {{ .Values.plugins.name | quote }}
+      enable: {{ .Values.plugins.enable }}
       config:
-{{ toYaml .Values.config | indent 8 }}
+{{ toYaml .Values.plugins.config | indent 8 }}
