@@ -15,6 +15,17 @@ entries:
   apisix-custom-setup:
   - apiVersion: v2
     appVersion: 2026.0.0
+    created: "2026-07-27T12:58:09.529241625Z"
+    description: Apisix custom setup
+    digest: f76996db5aa7f4286cab33993d37216ad67916853b122b4c71a55f0e6bf31c5a
+    icon: https://avatars.githubusercontent.com/u/185957921
+    name: apisix-custom-setup
+    type: application
+    urls:
+    - https://github.com/eopterix/apisix-helm/releases/download/apisix-custom-setup-0.1.9/apisix-custom-setup-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
+    appVersion: 2026.0.0
     created: "2026-07-27T12:50:43.962249701Z"
     description: Apisix custom setup
     digest: 834f6eda636edfd82293294e601730d9e150f914fd476387242301c344ea3f06
@@ -114,4 +125,4 @@ entries:
     urls:
     - https://github.com/eopterix/apisix-helm/releases/download/apisix-service-monitor-0.1.0/apisix-service-monitor-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-27T12:50:43.962280428Z"
+generated: "2026-07-27T12:58:09.529279416Z"
