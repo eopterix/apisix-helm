@@ -1,0 +1,13 @@
+{{- range .Values.globalRules }}
+apiVersion: apisix.apache.org/v2
+kind: ApisixGlobalRule
+metadata:
+  name: {{ .name | quote }}
+spec:
+  ingressClassName: {{ .ingressClassName | quote }}
+  plugins:
+    - name: {{ .plugins.name | quote }}
+      enable: {{ .plugins.enable }}
+      config:
+{{ toYaml .plugins.config | indent 8 }}
+{{- end }}
