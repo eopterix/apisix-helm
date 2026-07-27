@@ -10,4 +10,5 @@ spec:
       enable: {{ .plugins.enable }}
       config:
 {{ toYaml .plugins.config | indent 8 }}
+---
 {{- end }}
