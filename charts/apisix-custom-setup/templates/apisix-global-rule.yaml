@@ -1,4 +1,4 @@
-{{- range .Values.globalRules }}
+{{- range .Values.rangeGlobalRule }}
 apiVersion: apisix.apache.org/v2
 kind: ApisixGlobalRule
 metadata:

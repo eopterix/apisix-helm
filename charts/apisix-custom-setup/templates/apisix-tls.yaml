@@ -1,4 +1,4 @@
-{{- range .Values.tls }}
+{{- range .Values.rangeApisixTls }}
 apiVersion: apisix.apache.org/v2
 kind: ApisixTls
 metadata:

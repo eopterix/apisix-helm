@@ -1,5 +1,5 @@
 {{- if .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" }}
-{{- range .Values.serviceMonitors }}
+{{- range .Values.rangeServiceMonitor }}
 apiVersion: apisix.apache.org/v2
 kind: ServiceMonitor
 metadata:
