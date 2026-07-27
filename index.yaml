@@ -12,4 +12,28 @@ entries:
     urls:
     - https://github.com/eopterix/apisix-helm/releases/download/apisix-0.1.1/apisix-0.1.1.tgz
     version: 0.1.1
-generated: "2026-07-24T12:16:52.875876438Z"
+  apisix-global-rule:
+  - apiVersion: v2
+    appVersion: 2026.0.0
+    created: "2026-07-27T08:43:28.274732898Z"
+    description: Apisix configuration
+    digest: a6ae5dbb2247dd207102dd441fa7542bd445a0c11c37971588f1f0d0cd7ad767
+    icon: https://avatars.githubusercontent.com/u/185957921
+    name: apisix-global-rule
+    type: application
+    urls:
+    - https://github.com/eopterix/apisix-helm/releases/download/apisix-global-rule-0.1.0/apisix-global-rule-0.1.0.tgz
+    version: 0.1.0
+  apisix-service-monitor:
+  - apiVersion: v2
+    appVersion: 2026.0.0
+    created: "2026-07-27T08:43:28.449565277Z"
+    description: Apisix configuration
+    digest: 846f0fd40005a259b6968da561e30636216fe249f14bb41f8c848679dfd5d2d5
+    icon: https://avatars.githubusercontent.com/u/185957921
+    name: apisix-service-monitor
+    type: application
+    urls:
+    - https://github.com/eopterix/apisix-helm/releases/download/apisix-service-monitor-0.1.0/apisix-service-monitor-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-07-27T08:43:28.449572618Z"
