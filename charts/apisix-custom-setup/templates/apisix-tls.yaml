@@ -6,7 +6,7 @@ metadata:
   namespace: {{ .namespace | quote }}
 spec:
   ingressClassName: {{ .ingressClassName | quote }}
-  hosts: {{ .hosts | quote }}
+  hosts: {{ .hosts }}
   secret:
     name: {{ .secret.name | quote }}
     namespace: {{ .secret.namespace | quote }}
