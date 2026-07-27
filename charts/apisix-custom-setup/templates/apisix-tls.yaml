@@ -5,10 +5,10 @@ metadata:
   name:  {{ .name | quote }}
   namespace: {{ .namespace | quote }}
 spec:
-  ingressClassName:  {{ .ingressClassName | quote }}
-  hosts: {{ .hosts }}
+  ingressClassName: {{ .ingressClassName | quote }}
+  hosts: {{ .hosts | quote }}
   secret:
     name: {{ .secret.name | quote }}
-    namespace:  {{ .secret.namespace | quote }}
+    namespace: {{ .secret.namespace | quote }}
 ---
 {{- end }}
