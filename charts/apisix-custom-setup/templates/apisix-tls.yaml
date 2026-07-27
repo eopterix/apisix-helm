@@ -1,0 +1,14 @@
+{{- range .Values.tls }}
+apiVersion: apisix.apache.org/v2
+kind: ApisixTls
+metadata:
+  name:  {{ .name | quote }}
+  namespace: {{ .namespace | quote }}
+spec:
+  ingressClassName:  {{ .ingressClassName | quote }}
+  hosts: {{ .hosts }}
+  secret:
+    name: {{ .secret.name | quote }}
+    namespace:  {{ .secret.namespace | quote }}
+---
+{{- end }}
