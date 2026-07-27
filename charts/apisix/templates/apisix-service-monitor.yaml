@@ -1,17 +1,19 @@
 {{- if .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" }}
+{{- range .Values.serviceMonitors }}
 apiVersion: apisix.apache.org/v2
 kind: ServiceMonitor
 metadata:
-  name: {{ .Values.name | quote }}
-  namespace: {{ .Values.namespace | quote }}
+  name: {{ .name | quote }}
+  namespace: {{ .namespace | quote }}
   labels:
-    release: {{ .Values.labels.release | quote }}
+    release: {{ .labels.release | quote }}
 spec:
   endpoints:
     - interval: 15s
-      path: {{ .Values.endpoints.path | quote }}
-      port: {{ .Values.endpoints.port | quote }}
+      path: {{ .endpoints.path | quote }}
+      port: {{ .endpoints.port | quote }}
   selector:
     matchLabels:
-      {{ toYaml .Values.selector.matchLabels | indent 6 }}
+      {{ toYaml .selector.matchLabels | indent 6 }}
+{{- end }}
 {{- end }}
