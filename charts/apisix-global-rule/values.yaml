@@ -1,7 +1,0 @@
-name: redirect-to-tls
-ingressClassName: apisix
-plugins:
-  name: ""
-  enable: true
-  config: ""
-
